@@ -92,6 +92,20 @@ button:focus {
     margin-top: 50px;
 }
 
+.colored-text {
+    color: coral;
+}
+
+.word-meaning {
+    background-color: cyan;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 @media(max-width: 800px) {}
 
 @media(max-width: 700px) {}

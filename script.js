@@ -23,9 +23,25 @@ function searchMeal(e) {
         wordEl.innerHTML = response.results.map(
           (result) =>
             `<div>
-                 <div ='${result.definition}'>
-              <h5>PART OF SPEECH : ${result.partOfSpeech}</h5>
-              <h3>${result.definition}</h3>
+                 <div>
+              <div>
+              PART OF SPEECH : <p class='colored-text'> ${result.partOfSpeech}</p>
+              </div>
+              <hr/>
+              <div>
+              SYNONYM(S) : <p class='colored-text'> ${result.synonyms} </p>
+              </div>
+              <hr />
+              <div>
+              HAS TYPES : <p class='colored-text'> ${result.hasTypes} </p>
+               </div>
+              <hr />
+              <div>
+              <br />
+              <h2>MEANING:</h2>
+              <h3 class='word-meaning'>${result.definition}</h3>
+              </div>
+              
             </div>
             </div>
                  `
